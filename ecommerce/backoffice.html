@@ -1,0 +1,35 @@
+<!-- /pages/backoffice.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back Office</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gestione Prodotti</h1>
+    </header>
+    <main>
+        <form id="product-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" required>
+            <label for="description">Descrizione:</label>
+            <input type="text" id="description" required>
+            <label for="brand">Marca:</label>
+            <input type="text" id="brand" required>
+            <label for="imageUrl">URL Immagine:</label>
+            <input type="url" id="imageUrl" required>
+            <label for="price">Prezzo:</label>
+            <input type="number" id="price" required>
+            <button type="submit">Salva Prodotto</button>
+        </form>
+
+        <div id="product-list">
+            <!-- Prodotti esistenti nel database -->
+        </div>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>
